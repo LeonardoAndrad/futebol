@@ -1,0 +1,96 @@
+
+  <!--Basic: auto-select the icon based on the platform -->
+  <ion-icon name="football"></ion-icon>
+
+  <!-- Advanced: explicity set the icon for each platform -->
+  <ion-icon ios="ios-football" md="md-football"></ion-icon>
+  <ion-content class="card-background-page">
+
+    <div padding>
+      <ion-segment [(ngModel)]="pet">
+        <ion-segment-button value="Real madri">
+          Real madri
+        </ion-segment-button>
+        <ion-segment-button value="Barcelona">
+          Barcelona 
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+    
+    <div [ngSwitch]="pet">
+      <ion-list *ngSwitchCase="'Real madri'">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/02/06/11/Barcelona-vs-Real-Madrid-10.jpg">
+          </ion-thumbnail>
+          <h2>Real madri</h2>
+        </ion-item>
+        <ion-card>
+          <img src="https://http2.mlstatic.com/bandeira-real-madrid-escudo-100-x-080-metros-D_NQ_NP_669764-MLB26411294372_112017-F.jpg"/>
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+              </ion-card-title>
+            <p>
+              The most popular industrial group ever, and largely
+              responsible for bringing the music to a mass audience.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+
+        <ion-card>
+          <img src="https://abrilveja.files.wordpress.com/2018/12/esporte-futebol-mundial-de-clubes-final-real-madrid-al-ain-20181222-038.jpg?quality=70&strip=info&w=920"/>
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+              </ion-card-title>
+            <p>
+              The most popular industrial group ever, and largely
+              responsible for bringing the music to a mass audience.
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-list>
+
+
+      
+    
+      <ion-list *ngSwitchCase="'Barcelona'">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="https://e0.365dm.com/18/11/768x432/skysports-philippe-coutinho_4486653.jpg?20181113172028">
+          </ion-thumbnail>
+          <h2>Barcelona</h2>
+        </ion-item>
+        <ion-card>
+          <img src="https://i.pinimg.com/originals/16/41/d9/1641d9b45c46188b3f18d254091b8923.jpg"/>
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+              </ion-card-title>
+            <p>
+              The most popular industrial group ever, and largely
+              responsible for bringing the music to a mass audience.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img src="https://abrilveja.files.wordpress.com/2018/08/esporte-futebol-supercopa-espanha-barcelona-20180813-001.jpg?quality=70&strip=info&w=680&h=453&crop=1"/>
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+              </ion-card-title>
+            <p>
+              The most popular industrial group ever, and largely
+              responsible for bringing the music to a mass audience.
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-list>
+    </div>
+
+    
+
+     
